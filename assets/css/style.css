@@ -10,7 +10,6 @@
 /* Setting Max Width of Page and Zeroing out the margins and padding */
 body {
   background-image: url("../images/concrete-texture.png");
-  max-width: 960px;
   margin: 0;
   padding: 0;
   color: #777777;
@@ -286,4 +285,59 @@ footer {
 
 small {
   font-size: 12px;
+}
+
+
+/* For Screens between 768 and 640 Pixels */
+@media only screen and (max-width: 768px) {
+
+.wrapper {
+  max-width: 768px;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  margin: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+nav {
+  float: right;
+  padding: 5px;
+  margin: 0 0 0 0;
+}
+.bothsections {
+  margin: 0;
+}
+
+#maincontent {
+  margin: 10px;
+  clear: both;
+  max-width: 768px;
+}
+
+#connectsidebar {
+  margin: 10px;
+  clear: both;
+  float: none;
+  max-width: 768px;
+  text-align: left;
+}
+
+}
+
+
+/* For screens 640 Pixels and Less */
+@media only screen and (max-width: 640px) {
+
+  
 }
