@@ -25,6 +25,8 @@ header {
       width: auto;
       height: 65px;
       border: 1px solid #cccccc;
+      top: 0;
+      width: 100%;
 }
 
 header h1 {
@@ -280,12 +282,45 @@ footer {
       padding: 1rem;
       text-align: center;
       border-top: 10px solid #4AAAA5;
-      max-width: 960px;
+      max-width: auto;
 }
 
 small {
   font-size: 12px;
 }
+
+/* For screens 980 Pixels to 768 */
+@media only screen and (max-width: 980px) {
+
+.wrapper {
+  max-width: 980px;
+  margin: 0;
+}
+
+header {
+  max-width: 100%;
+}
+
+nav {
+  margin-right: 10px;
+}
+
+.bothsections {
+  margin: 10px 0 0 50px;
+}
+
+#maincontent {
+  width: 50%
+}
+
+#connectsidebar {
+  width: 50%
+  float: left;
+  margin-right: 25px;
+}
+
+}
+
 
 
 /* For Screens between 768 and 640 Pixels */
@@ -301,10 +336,8 @@ header {
   padding: 0;
 }
 header h1 {
-  margin: 10px;
+  margin: 0;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 h1 {
@@ -339,5 +372,57 @@ nav {
 /* For screens 640 Pixels and Less */
 @media only screen and (max-width: 640px) {
 
+.wrapper {
+  max-width: 640px;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: static;
+  text-align: center;
+  background: #4AAAA5;
+}
+header h1 {
+text-align: center;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+nav {
+  padding: 0px;
+  margin: 0;
+  background: white;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bothsections {
+  margin: 30px 0 0 0;
+  max-width: 600px;
+}
+
+#maincontent {
+  margin: 10px;
+  max-width: 640px;
+  width: 100%;
+  padding: 10px;
+  margin-right: 25px;
+}
+
+#connectsidebar {
+  margin: 10px;
+  clear: both;
+  float: none;
+  max-width: 640px;
+  width: 100%;
+  text-align: left;
+}
   
 }
